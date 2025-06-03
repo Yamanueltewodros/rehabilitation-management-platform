@@ -1,0 +1,105 @@
+.schedule-container {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: 150px repeat(7, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.schedule-header {
+    font-weight: 600;
+    background-color: #11417c;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+.time-slot  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f7f9fc;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    background-color: #d9e7f3;
+}
+
+.session-cell {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.077);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 14px;
+    border: 2px solid transparent; 
+}
+
+/* Unavailable sessions in soft grey */
+.session-unavailable {
+    background-color: #eaeaea47;
+    color: #7d7d7d;
+    border: 1px solid #8f8f8f24;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Available sessions in a soft pastel color */
+.session-available {
+    background-color: #d9f5f3b9; /* Light pastel green/blue */
+    color: #00796b;
+    border: 1px solid #76c7c639; /* Highlighting border */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Booked sessions with a subtle red */
+.session-booked {
+    background-color: #fdecea; /* Light pastel red */
+    color: #d32f2f;
+    border: 1px solid #f5b7b1; /* Highlighting border */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.session-booked .session-status{
+    font-weight: bold;
+}
+
+.session-cell:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .schedule-grid {
+        grid-template-columns: 100px repeat(7, 1fr);
+        gap: 10px;
+    }
+
+    .time-slot, .schedule-header, .session-cell {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+.loading,
+.error-message {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}

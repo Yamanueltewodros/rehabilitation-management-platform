@@ -1,0 +1,78 @@
+.patient-history-page {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f9;
+  }
+  
+  .btn-back {
+    margin-bottom: 15px;
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .history-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .history-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+
+.history-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 600px;
+  background-color: white;
+  border: 2px solid #000;
+  box-shadow: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-y: auto; /* Make it scrollable when overflow happens */
+}
+
+.close-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  color: #000;
+}
+
+.close-icon:hover {
+  background: #29549b;
+  color: #fff;
+}

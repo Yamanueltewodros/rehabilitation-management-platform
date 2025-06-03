@@ -1,0 +1,27 @@
+.navContainer{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navContainer button{
+    color: #000;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #e6edf2;
+    border-radius: 8px 8px 0 0;
+    width: 20%;
+    transition: ease-in 0.2s;
+}
+
+.navContainer button.active{
+    background: #184b9c;
+    color: #fff;
+    font-weight: bold;
+}
+
+.back-to-details{
+    margin-right: 30px;
+    cursor: pointer;
+}

@@ -1,0 +1,477 @@
+/* CSS Variables for Colors */
+:root {
+    --primary-color: #3498db;
+    --primary-hover-color: #2980b9;
+    --secondary-color: #2ecc71;
+    --secondary-hover-color: #27ae60;
+    --danger-color: #e74c3c;
+    --danger-hover-color: #c0392b;
+    --text-color: #2c3e50;
+    --background-color: #f4f7f6;
+    --white-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.admin-engagement-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.admin-engagement-title {
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 16px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.admin-engagement-button-group {
+    display: flex;
+    justify-content: start;
+    width: 80%;
+    border-bottom: 2px solid #d0e8ff;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.admin-engagement-button-group .admin-engagement-button {
+    background: #efeff0ad;
+    border: none;
+    color: #000;
+    padding: 12px 24px;
+    margin-right: 10px;
+    font-size: 14px;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.admin-engagement-button-group .admin-engagement-button.active{
+  background: #2249a5;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 5px solid #3e78ff;
+}
+
+/* Form Styles */
+.admin-engagement-form {
+    background-color: var(--white-color);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.form-title {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #bdc3c7;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.form-textarea {
+    height: 120px;
+}
+
+.form-submit-button {
+    background-color: var(--secondary-color);
+    padding: 12px 24px;
+    color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-submit-button:hover {
+    background-color: var(--secondary-hover-color);
+    transform: translateY(-2px);
+}
+
+/* Engagement List */
+.engagement-list-container {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.engagement-list-title {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.engagement-list {
+    list-style: none;
+    padding: 0;
+}
+
+.engagement-item {
+    background-color: #ecf0f1;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.engagement-item:hover {
+    transform: translateY(-2px);
+}
+
+.engagement-details-button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.engagement-details-button:hover {
+    background-color: var(--primary-hover-color);
+    transform: translateY(-2px);
+}
+
+/* Engagement Details */
+.engagement-details {
+    background-color: #fdfdfd;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    width: 100%;
+}
+
+.engagement-details p {
+    margin: 10px 0;
+    color: #34495e;
+}
+
+.delete-btn {
+    background-color: var(--danger-color);
+    color: var(--white-color);
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: var(--danger-hover-color);
+    transform: translateY(-2px);
+}
+
+/* Message */
+.message {
+    color: var(--secondary-hover-color);
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white-color);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Enhanced Engagement List Container */
+.engagement-list-container {
+    background-color: var(--white-color);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.engagement-item {
+    background-color: var(--white-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+
+.engagement-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail, .image-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.engagement-item:hover .video-thumbnail,
+.engagement-item:hover .image-thumbnail {
+    transform: scale(1.05);
+}
+
+.MuiCardContent-root {
+    padding: 20px !important;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,1));
+}
+
+.MuiTypography-body1 {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.engagement-list-title {
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    background: linear-gradient(45deg, var(--text-color), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.modal-content {
+    background: var(--white-color);
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 800px;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.delete-btn {
+    margin-top: 20px !important;
+    padding: 10px 24px !important;
+    border-radius: 8px !important;
+    text-transform: none !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+}
+
+.delete-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3) !important;
+}
+
+/* Engagement Gallery */
+.engagement-list-container {
+    padding: 2rem;
+}
+
+.engagement-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    aspect-ratio: 1;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+}
+
+.media-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 1rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+    opacity: 1;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 1rem;
+    color: white;
+}
+
+.document-icon {
+    font-size: 3rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.item-description {
+    color: white; /* Ensure the description text is white */
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.item-type {
+    opacity: 0.8;
+    font-size: 0.8rem;
+}
+
+.invalid-media {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    gap: 0.5rem;
+}
+
+/* View Details Button */
+.view-details-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .view-details-button {
+    opacity: 1;
+}
+
+.gallery-item-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8); /* Darker background for better visibility */
+    color: white; /* White text for contrast */
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-transform: capitalize; /* Capitalize the first letter of each word */
+}
+
+.gallery-item:hover .gallery-item-description {
+    opacity: 1;
+}
