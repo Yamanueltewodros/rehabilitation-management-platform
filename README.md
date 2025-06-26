@@ -20,7 +20,7 @@ Senior Project RCIMS (Rehabilitation Center Information Management System) is a 
 - **Node.js**: Backend runtime environment
 
 
-## Dependencies
+##  Dependencies
 ### Backend
 - **bcrypt**: For hashing passwords securely.
 - **cors**: To enable Cross-Origin Resource Sharing.
