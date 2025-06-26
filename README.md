@@ -5,7 +5,7 @@
 Senior Project RCIMS (Rehabilitation Center Information Management System) is a comprehensive platform designed to manage clinical information remotely. It includes features for patient management, professional management, appointment scheduling, messaging, role-based access, and more.
 
 
-## Features
+##  Features
 - **User Authentication**: Secure login and signup for users.
 - **Patient Management**: Manage patient details, medical history, and appointments.
 - **Professional Management**: Manage professional details, schedules, and patient assignments.
