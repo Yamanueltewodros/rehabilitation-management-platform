@@ -37,7 +37,6 @@ Senior Project RCIMS (Rehabilitation Center Information Management System) is a 
 - **@mui/icons-material**: Provides Material Design icons as React components.
 - **sweetalert2**: For creating beautiful, responsive, customizable, and accessible (WAI-ARIA) replacement for JavaScript's popup boxes.
 
-
 ## Installation
 
 ### Prerequisites
