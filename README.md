@@ -87,4 +87,3 @@ Senior Project RCIMS (Rehabilitation Center Information Management System) is a 
 ## License
 This project is licensed under the MIT License.
 
-
