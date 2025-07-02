@@ -41,6 +41,7 @@ Senior Project RCIMS (Rehabilitation Center Information Management System) is a 
 ### Prerequisites
 - Node.js
 - MongoDB
+MongoDB
 
 ### Backend Setup
 1. Navigate to the backend directory:
