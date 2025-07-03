@@ -10,7 +10,7 @@ const patientManagementRoute = require("./routes/Admin routes/PatientManagement"
 const caregiverManagementRoute = require("./routes/CaregiverManagement");
 const patientHistoryManagementRoute = require("./routes/PatientHistoryManagement");
 const scheduleRoute = require("./routes/ScheduleRoutes");
-const {
+const { 
     updateSchedule,
     updateAvailabilityBasedOnTime,
 } = require("./controller/ScheduleController");
