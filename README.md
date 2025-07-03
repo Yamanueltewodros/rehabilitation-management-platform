@@ -10,6 +10,7 @@ Senior Project RCIMS (Rehabilitation Center Information Management System) is a 
 - **Notifications**: Real-time notifications for appointments, messages, and updates.
 - **Reports**: Generate and view various reports related to patient and professional activities.
 
+
 ## Tech Stack
 - **MongoDB**: Database
 - **Express.js**: Backend framework
