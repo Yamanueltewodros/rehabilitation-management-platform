@@ -6,7 +6,8 @@ const Caregiver = require("../models/Caregiver");
 const { signupUser, removeUser } = require("./UserController");
 const {
     addPatientToProfessionalDefault,
-    getProfessionalWithLeastPatientsInDepartment,
+   
+ getProfessionalWithLeastPatientsInDepartment,
 } = require("./Patient-Professional-SharedController");
 const { addPatientSchedule } = require("./ScheduleController");
 const { createEarliestAppointment } = require("./AppointmentController");
